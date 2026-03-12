@@ -1,35 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Dr Service - Technical Consultant</title>
+
+<title>DR Service | IT Infrastructure & PC Solutions</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
 body{
-font-family: Arial;
+margin:0;
+font-family:Arial;
 background:#0f172a;
 color:white;
-text-align:center;
-padding:40px;
 }
 
-h1{
+header{
+background:#020617;
+display:flex;
+justify-content:space-between;
+padding:20px 40px;
+align-items:center;
+}
+
+header h1{
 color:#38bdf8;
+margin:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
+
+.hero{
+text-align:center;
+padding:100px 20px;
+background:linear-gradient(180deg,#020617,#0f172a);
+}
+
+.hero h2{
+font-size:42px;
+color:#38bdf8;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.hero button{
+margin-top:20px;
+padding:12px 24px;
+background:#38bdf8;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
+
+.services{
+padding:60px 30px;
+text-align:center;
+}
+
+.services h2{
+margin-bottom:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
 .card{
 background:#1e293b;
-padding:20px;
-margin:20px;
+padding:25px;
 border-radius:10px;
 }
 
-button{
-background:#38bdf8;
-border:none;
-padding:10px 20px;
-border-radius:5px;
+.process{
+background:#020617;
+padding:60px;
+text-align:center;
+}
+
+.steps{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+}
+
+.step{
+background:#1e293b;
+padding:20px;
+border-radius:8px;
+width:200px;
+}
+
+.contact{
+padding:60px;
+text-align:center;
+}
+
+.whatsapp{
+background:#25D366;
+color:white;
+padding:12px 20px;
+border-radius:6px;
+text-decoration:none;
+}
+
+footer{
+background:#020617;
+text-align:center;
+padding:20px;
 }
 
 </style>
@@ -38,23 +127,116 @@ border-radius:5px;
 
 <body>
 
+<header>
+
 <h1>DR SERVICE</h1>
-<h3>Technical Consultant</h3>
+
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<h2>Professional IT & Infrastructure Solutions</h2>
+
+<p>Gaming PCs • Video Conferencing • Server Setup • Office IT Infrastructure</p>
+
+<a href="https://wa.me/919841711737">
+<button>Get Consultation</button>
+</a>
+
+</section>
+
+
+<section id="services" class="services">
+
+<h2>Our Services</h2>
+
+<div class="grid">
 
 <div class="card">
-<p>Video & Audio Conferencing Setup</p>
-<p>Laptop & Desktop Sales</p>
-<p>Gaming PC Consulting</p>
-<p>Office & Studio Setup</p>
-<p>Network & Server Setup</p>
+<h3>Gaming PC Build</h3>
+<p>Custom high-performance gaming PC builds.</p>
 </div>
 
 <div class="card">
+<h3>Video Conferencing</h3>
+<p>Professional meeting room & studio setup.</p>
+</div>
+
+<div class="card">
+<h3>Office IT Setup</h3>
+<p>Network infrastructure and workstation setup.</p>
+</div>
+
+<div class="card">
+<h3>Server Deployment</h3>
+<p>VMware, Windows Server & virtualization solutions.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="process">
+
+<h2>How It Works</h2>
+
+<div class="steps">
+
+<div class="step">
+<h3>1</h3>
+<p>Consultation</p>
+</div>
+
+<div class="step">
+<h3>2</h3>
+<p>Requirement Analysis</p>
+</div>
+
+<div class="step">
+<h3>3</h3>
+<p>Installation</p>
+</div>
+
+<div class="step">
+<h3>4</h3>
+<p>Testing & Delivery</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+<h2>Contact</h2>
+
 <p>📞 9841711737</p>
+
 <p>📧 daniprabhas.tech@gmail.com</p>
-<p>📍 Chennai - Porur</p>
-</div>
+
+<p>📍 Chennai – Porur</p>
+
+<a class="whatsapp" href="https://wa.me/919841711737">
+Chat on WhatsApp
+</a>
+
+</section>
+
+
+<footer>
+
+© 2026 DR Service | All Rights Reserved
+
+</footer>
 
 </body>
-
 </html>
