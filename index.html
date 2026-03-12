@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,22 +11,23 @@
 
 body{
 margin:0;
-font-family:Arial;
+font-family:Arial,Helvetica,sans-serif;
 background:#0f172a;
 color:white;
 }
+
+/* Header */
 
 header{
 background:#020617;
 display:flex;
 justify-content:space-between;
-padding:20px 40px;
 align-items:center;
+padding:20px 40px;
 }
 
 header h1{
 color:#38bdf8;
-margin:0;
 }
 
 nav a{
@@ -35,24 +37,30 @@ margin:0 15px;
 font-weight:bold;
 }
 
-.hero{
-text-align:center;
-padding:100px 20px;
-background:linear-gradient(180deg,#020617,#0f172a);
-}
-
-.hero h2{
-font-size:42px;
+nav a:hover{
 color:#38bdf8;
 }
 
+/* Hero */
+
+.hero{
+background:url("https://images.unsplash.com/photo-1587202372775-e229f172b9d7") center/cover;
+padding:120px 20px;
+text-align:center;
+}
+
+.hero h2{
+font-size:45px;
+color:white;
+}
+
 .hero p{
-font-size:18px;
+font-size:20px;
 }
 
 .hero button{
 margin-top:20px;
-padding:12px 24px;
+padding:14px 30px;
 background:#38bdf8;
 border:none;
 border-radius:6px;
@@ -60,8 +68,10 @@ font-size:16px;
 cursor:pointer;
 }
 
+/* Services */
+
 .services{
-padding:60px 30px;
+padding:60px 40px;
 text-align:center;
 }
 
@@ -72,14 +82,35 @@ margin-bottom:40px;
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+gap:30px;
 }
 
 .card{
 background:#1e293b;
-padding:25px;
-border-radius:10px;
+border-radius:12px;
+overflow:hidden;
+transition:transform .3s;
 }
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+}
+
+.card p{
+padding:0 15px 20px;
+}
+
+/* Process */
 
 .process{
 background:#020617;
@@ -91,16 +122,17 @@ text-align:center;
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:30px;
-margin-top:30px;
+gap:25px;
 }
 
 .step{
 background:#1e293b;
-padding:20px;
+padding:25px;
 border-radius:8px;
 width:200px;
 }
+
+/* Contact */
 
 .contact{
 padding:60px;
@@ -109,16 +141,18 @@ text-align:center;
 
 .whatsapp{
 background:#25D366;
-color:white;
-padding:12px 20px;
+padding:14px 20px;
 border-radius:6px;
+color:white;
 text-decoration:none;
 }
 
+/* Footer */
+
 footer{
 background:#020617;
-text-align:center;
 padding:20px;
+text-align:center;
 }
 
 </style>
@@ -160,23 +194,27 @@ padding:20px;
 <div class="grid">
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5">
 <h3>Gaming PC Build</h3>
-<p>Custom high-performance gaming PC builds.</p>
+<p>High-performance custom gaming PC builds.</p>
 </div>
 
 <div class="card">
-<h3>Video Conferencing</h3>
-<p>Professional meeting room & studio setup.</p>
+<img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04">
+<h3>Video Conferencing Setup</h3>
+<p>Professional meeting room and studio setup.</p>
 </div>
 
 <div class="card">
-<h3>Office IT Setup</h3>
-<p>Network infrastructure and workstation setup.</p>
+<img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f">
+<h3>Office IT Infrastructure</h3>
+<p>Networking, firewall and workstation setup.</p>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31">
 <h3>Server Deployment</h3>
-<p>VMware, Windows Server & virtualization solutions.</p>
+<p>VMware and Windows Server solutions.</p>
 </div>
 
 </div>
@@ -197,7 +235,7 @@ padding:20px;
 
 <div class="step">
 <h3>2</h3>
-<p>Requirement Analysis</p>
+<p>Planning</p>
 </div>
 
 <div class="step">
@@ -207,7 +245,7 @@ padding:20px;
 
 <div class="step">
 <h3>4</h3>
-<p>Testing & Delivery</p>
+<p>Testing</p>
 </div>
 
 </div>
@@ -220,9 +258,7 @@ padding:20px;
 <h2>Contact</h2>
 
 <p>📞 9841711737</p>
-
 <p>📧 daniprabhas.tech@gmail.com</p>
-
 <p>📍 Chennai – Porur</p>
 
 <a class="whatsapp" href="https://wa.me/919841711737">
@@ -231,7 +267,6 @@ Chat on WhatsApp
 
 </section>
 
-
 <footer>
 
 © 2026 DR Service | All Rights Reserved
@@ -239,4 +274,6 @@ Chat on WhatsApp
 </footer>
 
 </body>
+
 </html>
+```
